@@ -1,0 +1,38 @@
+body{
+    font-family: Verdana,Arial;
+    font-size:12px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+p{
+    margin: 3px 0;
+}
+h2,h3,h4{
+    margin: 5px 0;
+}
+a:hover{
+    color:#BB0000;
+}
+
+/* common base */
+#wrapper{
+}
+#header{
+}
+#topmenu {
+}
+#topmenu a {
+}
+#topmenu a:hover {
+}
+#side-left p{
+}
+#footer {
+}
+
+/* elements */
+

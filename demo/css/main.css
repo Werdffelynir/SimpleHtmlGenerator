@@ -1,8 +1,8 @@
 body{
     background-color: #272727;
     color: #E7E7E7;
-    font-family: Verdana,Arial;
-    font-size:11px;
+    font-size: 11px;
+    font-family: "Lucida Grande", Verdana, Arial, "Bitstream Vera Sans", sans-seri;
 }
 ul{
     list-style: none;
@@ -19,7 +19,15 @@ h2,h3,h4{
 a:hover{
     color:#BB0000;
 }
+
+/* common base */
+
+body{
+
+}
 #wrapper{
+    width:690px;
+    margin:5px auto;
     background-color:#E7E7E7;
     color:#0F0F0F;
     padding:4px;
@@ -49,3 +57,19 @@ a:hover{
     background-color: #535353;
     color:#E7E7E7;
 }
+
+
+/* elements */
+
+
+
+
+
+
+
+
+
+
+
+
+

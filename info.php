@@ -42,20 +42,20 @@ $html->javascript('/*some javascript*/');
 $wrapData = $html->wrap($data, array('class'=>'grid-8 '));
 
 /*
-$html->add(array(
+$html->inner(array(
 	'id'=>'header',
 	'data'=>$data,
 	'attr'=>array('class'=>'grid clear'),
 	)); 
 */
 $data = 'Some data';
-$html->add('wrapper',  null, array('style'=>'width:690px;margin:0 auto;background-color:#110055;color:#FFAAFF;padding:4px;'));
-$html->add('header',  $data, array('class'=>'grid clear'));
-$html->add('topmenu', $data, array('class'=>'grid clear'));
-$html->add('content', null, array('class'=>'grid clear'));
-$html->add('footer',  $data, array('class'=>'grid clear'));
-$html->add('side-left',$data,array('class'=>'grid-4 first'));
-$html->add('side-right',$data,array('class'=>'grid-8 '));
+$html->inner('wrapper',  null, array('style'=>'width:690px;margin:0 auto;background-color:#110055;color:#FFAAFF;padding:4px;'));
+$html->inner('header',  $data, array('class'=>'grid clear'));
+$html->inner('topmenu', $data, array('class'=>'grid clear'));
+$html->inner('content', null, array('class'=>'grid clear'));
+$html->inner('footer',  $data, array('class'=>'grid clear'));
+$html->inner('side-left',$data,array('class'=>'grid-4 first'));
+$html->inner('side-right',$data,array('class'=>'grid-8 '));
 
 
 
