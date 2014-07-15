@@ -13,9 +13,11 @@ class HtmlGen
     public $stylesheet = null;
     public $javascript = null;
 
+
 	const NL = "\n";
 	const TB = "\t";
 
+    private $_timerStart = null;
     private $_extractorData = '';
     private $_stylesData = array();
     private $_scriptsData = array();
@@ -23,14 +25,21 @@ class HtmlGen
 
 	public function __construct(array $data = null)
 	{
+        $this->_timerStart = microtime(true);
 		if($data != null)
-			$this->constructorData = $data;	
+			$this->constructorData = $data;
+
 	}
 
 	public function constructor(array $data)
 	{
 		$this->constructorData = $data;	
 	}
+
+    public function timer($float=4)
+    {
+        return round(microtime(true) - $this->_timerStart, $float);
+    }
 
 	public function add()
 	{
@@ -49,6 +58,12 @@ class HtmlGen
 		}
 	}
 
+    public function append($data, $append)
+    {
+        if(isset($this->contentData[$data])) {
+            $this->contentData[$data]['data'] .= self::NL.$append;
+        }
+    }
 
     public function stylesheet($data=null, $append=false)
     {

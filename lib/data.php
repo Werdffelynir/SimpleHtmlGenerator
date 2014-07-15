@@ -4,15 +4,18 @@ return array(
     'header'=>'',
     'topmenu'=>'
     <div style="text-align: center">
-        <a href="?page=0">Home</a> | <a href="?page=1">Blog</a> | <a href="?page=2">Downloads</a> |<a href="?page=3">Contacts</a> | <a href="?page=4">About</a>
+        <a href="?page=0">Html Generator</a> |
+        <a href="?page=1">Создания каркаса</a> |
+        <a href="?page=2">Свойства и методы</a> |
+        <a href="?page=3">Скачать</a>
     </div>',
     'side-left'=>'<h3>Ipsum consectetur.</h3><p>Assumenda possimus quaerat sed sunt temporibus.</p><p>Consequuntur illum laborum libero pariatur repudiandae?</p>
     <ul>
-        <li><a href="?page=0">Home</a>
-        <li><a href="?page=1">Blog</a>
-        <li><a href="?page=2">Downloads</a>
-        <li><a href="?page=3">Contacts</a>
-        <li><a href="?page=4">About</a>
+        <li><a href="?page=0">Пример 1</a>
+        <li><a href="?page=1">Пример 2</a>
+        <li><a href="?page=2">Пример 3</a>
+        <li><a href="?page=3">Пример 4</a>
+        <li><a href="?page=4">Пример 5</a>
     </ul>',
     'side-right'=> array(
         '<h1>Основы взаимодействия</h1>
